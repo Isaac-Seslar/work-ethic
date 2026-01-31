@@ -5,5 +5,6 @@ extends Node
 #Connect to a signal from a script: EventBus.[signal_name].connect([method_name])
 #Emit a signal from a script:  EventBus.emit_signal([signal_names], args)
 
-#Money Signals
-signal money_changed(amount : int)
+#Stat Signals
+signal money_changed(total_money : int)
+signal stamina_changed(current_stamina : float)
