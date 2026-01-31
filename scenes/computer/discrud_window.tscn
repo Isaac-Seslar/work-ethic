@@ -13,11 +13,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="DiscrudWindow" type="ReferenceRect" parent="." unique_id=1338162932]
-layout_mode = 0
-offset_left = 6.0
-offset_top = 4.0
-offset_right = 553.0
-offset_bottom = 421.0
+layout_mode = 1
 border_width = 1.4
 
 [node name="PanelContainer" type="PanelContainer" parent="DiscrudWindow" unique_id=715521030]

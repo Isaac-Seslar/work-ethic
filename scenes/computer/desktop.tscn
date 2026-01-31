@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://btetac6a8y6kx" path="res://assets/computer/desktop_background.png" id="1_ex5dl"]
 [ext_resource type="PackedScene" uid="uid://bvtlw5tvd8xtd" path="res://scenes/computer/drag_drop_window.tscn" id="2_0448a"]
+[ext_resource type="PackedScene" uid="uid://cyr7rfgkercx8" path="res://scenes/computer/money_tracker_gui.tscn" id="4_hdxfd"]
 [ext_resource type="PackedScene" uid="uid://b561layt3px1l" path="res://scenes/computer/discrud_window.tscn" id="5_1xp17"]
 
 [node name="Desktop" type="Control" unique_id=1141008444]
@@ -30,8 +31,21 @@ scale = Vector2(1.39, 1.39)
 
 [node name="DragDropWindow" parent="." unique_id=765971977 instance=ExtResource("2_0448a")]
 layout_mode = 1
-offset_left = 1136.0001
-offset_top = 623.0
-offset_right = 1136.0001
-offset_bottom = 623.0
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+offset_left = 1129.9999
+offset_top = 599.99994
+offset_right = 1129.9999
+offset_bottom = 599.99994
+grow_horizontal = 0
+grow_vertical = 0
 scale = Vector2(0.495, 0.495)
+
+[node name="MoneyTracker" parent="." unique_id=841036382 instance=ExtResource("4_hdxfd")]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 1
+offset_left = 5.0
+offset_top = 861.0
+offset_right = 205.0
+offset_bottom = 961.0

@@ -4,3 +4,5 @@ extends Node
 
 const MAX_STAMINA : float = 100.0
 enum areas {WINDOW, COMPUTER, DOOR, ROOM}
+const MESSAGE_SENT_EARN : int = 1
+const FILE_MOVED_EARN : int = 1

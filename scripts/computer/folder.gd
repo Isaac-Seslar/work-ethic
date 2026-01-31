@@ -5,12 +5,16 @@ var file_scene = preload("res://scenes/computer/file_control.tscn")
 
 var stored_files = [] # This acts as the folder's memory
 
+#func _ready() -> void:
+	#
+
 func _can_drop_data(_at_position: Vector2, data: Variant) -> bool:
 	# Only highlight and accept if it is a valid file
 	return typeof(data) == TYPE_DICTIONARY and data.get("type") == "file"
 
 func _drop_data(_at_position: Vector2, data: Variant) -> void:
 	if is_instance_valid(data.source_node):
+		StatsManager.add_money(Constants.FILE_MOVED_EARN)
 		data.source_node.queue_free()
 	
 	var timer = Timer.new()
@@ -19,7 +23,11 @@ func _drop_data(_at_position: Vector2, data: Variant) -> void:
 	timer.wait_time = 0.5 # Delay before spawning
 	timer.timeout.connect(_on_timer_timeout)
 	timer.start()
+
+func _add_money() -> int:
+	return 2
 	
+
 func _on_timer_timeout():
 	spawn_file()
 	

@@ -20,6 +20,7 @@ func _on_text_submitted(new_text):
 	else:
 		print("me")
 		prepended_val="Me: "
+		StatsManager.add_money(Constants.MESSAGE_SENT_EARN)
 		_message_formater(new_text, prepended_val)
 	
 func _message_formater(new_text, prepended_val: String ="" ):
