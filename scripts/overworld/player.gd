@@ -3,6 +3,9 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 
+func _ready() -> void:
+	position = Vector2(500,400)
+	
 func _physics_process(delta: float) -> void:
 	var direction := Input.get_vector("overworld_move_left", "overworld_move_right", "overworld_move_up", "overworld_move_down")
 	velocity = direction * SPEED

@@ -3,8 +3,16 @@
 [ext_resource type="PackedScene" uid="uid://2tpura1a10ab" path="res://scenes/overworld/player.tscn" id="1_k2c4c"]
 [ext_resource type="Script" uid="uid://dlk1uy6m7yya6" path="res://scripts/overworld/player.gd" id="2_n3lcv"]
 
+[sub_resource type="ConcavePolygonShape2D" id="ConcavePolygonShape2D_n3lcv"]
+segments = PackedVector2Array(288, 324, 864, 324, 864, 324, 1152, 648, 1152, 648, 0, 648, 0, 648, 288, 324)
+
 [node name="Overworld" type="Node2D" unique_id=1092108105]
 
 [node name="Player" parent="." unique_id=84637846 instance=ExtResource("1_k2c4c")]
 motion_mode = 1
 script = ExtResource("2_n3lcv")
+
+[node name="LeftWall" type="StaticBody2D" parent="." unique_id=2143136743]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall" unique_id=2115598578]
+shape = SubResource("ConcavePolygonShape2D_n3lcv")
