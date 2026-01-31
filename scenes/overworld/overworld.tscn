@@ -36,3 +36,16 @@ position = Vector2(576, 445)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WindowDetectionArea" unique_id=1738357481]
 shape = SubResource("RectangleShape2D_jvs31")
+
+[node name="ComputerDetectionArea" type="Area2D" parent="." unique_id=1562123647]
+position = Vector2(992, 521)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ComputerDetectionArea" unique_id=1659133031]
+polygon = PackedVector2Array(158, 126, -41, 127, -150, -26, -44, -27)
+
+[node name="DoorDetectionArea" type="Area2D" parent="." unique_id=640290950]
+position = Vector2(160, 520)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="DoorDetectionArea" unique_id=106690033]
+position = Vector2(-1, 0)
+polygon = PackedVector2Array(-159, 128, 85, 128, 156, -24, 44, -24)
