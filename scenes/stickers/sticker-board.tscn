@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dtlurqxa14eb7"]
+
+[ext_resource type="Texture2D" uid="uid://888mtx7p6cjy" path="res://assets/images/stickers/whiteboard.jpg" id="1_rj24h"]
+[ext_resource type="PackedScene" uid="uid://h2htd18ovnil" path="res://scenes/stickers/sticker.tscn" id="2_q22hh"]
+[ext_resource type="Texture2D" uid="uid://drjda5qava4nn" path="res://assets/images/stickers/tall-pine-tree.png" id="3_qrqwn"]
+[ext_resource type="Texture2D" uid="uid://cngwgr6d533ax" path="res://assets/images/stickers/mountain.png" id="4_q2gqu"]
+
+[node name="StickerBoard" type="Node2D" unique_id=1507668906]
+
+[node name="Whiteboard" type="Sprite2D" parent="." unique_id=1372787194]
+position = Vector2(576, 324)
+scale = Vector2(0.9, 0.7534884)
+texture = ExtResource("1_rj24h")
+
+[node name="Sticker1" parent="." unique_id=1974334144 instance=ExtResource("2_q22hh")]
+z_index = 1
+position = Vector2(324, 236)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1316809059]
+position = Vector2(576, 324)
+
+[node name="Sticker" parent="." unique_id=629374741 instance=ExtResource("2_q22hh")]
+z_index = 1
+position = Vector2(745, 411)
+sticker_texture = ExtResource("3_qrqwn")
+
+[node name="Sticker2" parent="." unique_id=416572207 instance=ExtResource("2_q22hh")]
+z_index = 1
+position = Vector2(365, 451)
+sticker_texture = ExtResource("4_q2gqu")

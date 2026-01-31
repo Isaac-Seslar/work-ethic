@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://h2htd18ovnil"]
+
+[ext_resource type="Script" uid="uid://bko3t0jhxwbgq" path="res://scripts/stickers/sticker.gd" id="1_imf23"]
+[ext_resource type="Texture2D" uid="uid://dqvo1rw2htr7m" path="res://assets/images/stickers/sun-sticker.png" id="1_mpens"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_imf23"]
+radius = 65.76473
+
+[node name="Sticker" type="Area2D" unique_id=1974334144]
+script = ExtResource("1_imf23")
+sticker_texture = ExtResource("1_mpens")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1471967883]
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("1_mpens")
+
+[node name="DropShadow" type="Sprite2D" parent="." unique_id=1682946728]
+modulate = Color(0.011764706, 0.011764706, 0.011764706, 0.30588236)
+z_index = -1
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("1_mpens")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=560144833]
+shape = SubResource("CircleShape2D_imf23")
