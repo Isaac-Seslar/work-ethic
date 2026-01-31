@@ -13,7 +13,7 @@ func _ready() -> void:
 	sprite_2d.texture = sticker_texture
 	drop_shadow.texture = sticker_texture
 
-func _input_event(viewport : Node, event : InputEvent, shape_idx : int) -> void:
+func _input_event(_viewport : Node, event : InputEvent, _shape_idx : int) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		if event.is_pressed():
 			dragging = true
@@ -31,7 +31,6 @@ func _input_event(viewport : Node, event : InputEvent, shape_idx : int) -> void:
 			z_index = 0
 			selected = false
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if dragging:
 		position = get_global_mouse_position() + drag_offset
