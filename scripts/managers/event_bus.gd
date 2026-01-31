@@ -8,3 +8,6 @@ extends Node
 #Stat Signals
 signal money_changed(total_money : int)
 signal stamina_changed(current_stamina : float)
+
+#Sticker Signals
+signal sticker_purchased(sticker_data : StickerData)

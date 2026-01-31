@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StickerData" format=3 uid="uid://mdodsk212njd"]
+
+[ext_resource type="Script" uid="uid://km7tcmpr50sb" path="res://scripts/stickers/sticker_data.gd" id="1_lap3l"]
+[ext_resource type="Texture2D" uid="uid://cngwgr6d533ax" path="res://assets/images/stickers/mountain.png" id="1_qq7r6"]
+
+[resource]
+script = ExtResource("1_lap3l")
+name = "Mountain"
+price = 20
+image = ExtResource("1_qq7r6")
+metadata/_custom_type_script = "uid://km7tcmpr50sb"
