@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://b561layt3px1l"]
+
+[ext_resource type="Script" uid="uid://7k2b2httl73w" path="res://scripts/computer/panel_container.gd" id="1_evipv"]
+[ext_resource type="Script" uid="uid://dg5sxrkh3eg52" path="res://scripts/computer/line_edit.gd" id="2_6rsil"]
+[ext_resource type="Script" uid="uid://bwgo5m1p1ekys" path="res://scripts/computer/timer.gd" id="3_6rsil"]
+
+[node name="DiscrudWindow" type="Control" unique_id=192346948]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DiscrudWindow" type="ReferenceRect" parent="." unique_id=1338162932]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 4.0
+offset_right = 553.0
+offset_bottom = 421.0
+border_width = 1.4
+
+[node name="PanelContainer" type="PanelContainer" parent="DiscrudWindow" unique_id=715521030]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.126
+anchor_top = -0.134
+anchor_right = 0.126
+anchor_bottom = -0.134
+offset_left = 31.40091
+offset_top = 54.940002
+offset_right = 460.401
+offset_bottom = 464.94
+script = ExtResource("1_evipv")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="DiscrudWindow/PanelContainer" unique_id=1351284557]
+layout_mode = 2
+size_flags_vertical = 0
+alignment = 1
+
+[node name="Title" type="Panel" parent="DiscrudWindow/PanelContainer/VBoxContainer" unique_id=1241335552]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Label" type="Label" parent="DiscrudWindow/PanelContainer/VBoxContainer/Title" unique_id=1235225842]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Discrud"
+
+[node name="Button" type="Button" parent="DiscrudWindow/PanelContainer/VBoxContainer/Title" unique_id=1568305860]
+layout_direction = 3
+layout_mode = 0
+offset_left = 11.51001
+offset_right = 19.51001
+offset_bottom = 8.0
+scale = Vector2(2.48, 2.48)
+
+[node name="Control" type="Control" parent="DiscrudWindow/PanelContainer/VBoxContainer" unique_id=878679696]
+custom_minimum_size = Vector2(2.99, 17.5)
+layout_mode = 2
+
+[node name="MessageBox" type="RichTextLabel" parent="DiscrudWindow/PanelContainer/VBoxContainer" unique_id=731646378]
+custom_minimum_size = Vector2(0, 350.27)
+layout_mode = 2
+text = "Chat history
+"
+
+[node name="LineEdit" type="LineEdit" parent="DiscrudWindow/PanelContainer/VBoxContainer" unique_id=94113897]
+layout_mode = 2
+placeholder_text = "Type here ..."
+deselect_on_focus_loss_enabled = false
+script = ExtResource("2_6rsil")
+
+[node name="Timer" type="Timer" parent="." unique_id=1282773239]
+autostart = true
+script = ExtResource("3_6rsil")

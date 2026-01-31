@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dkdlmo0014os1"]
+
+[ext_resource type="Texture2D" uid="uid://btetac6a8y6kx" path="res://assets/computer/desktop_background.png" id="1_ex5dl"]
+[ext_resource type="PackedScene" uid="uid://bvtlw5tvd8xtd" path="res://scenes/computer/drag_drop_window.tscn" id="2_0448a"]
+[ext_resource type="Texture2D" uid="uid://cvfw44qobq8u2" path="res://assets/computer/crt.png" id="4_0glk6"]
+[ext_resource type="PackedScene" uid="uid://b561layt3px1l" path="res://scenes/computer/discrud_window.tscn" id="5_1xp17"]
+
+[node name="Desktop" type="Control" unique_id=1141008444]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 1
+
+[node name="BackgroundWallpaper" type="TextureRect" parent="." unique_id=2051308479]
+layout_mode = 1
+offset_right = 1716.0
+offset_bottom = 965.0
+texture = ExtResource("1_ex5dl")
+
+[node name="MonitorBorder" type="TextureRect" parent="." unique_id=39828036]
+layout_mode = 0
+offset_left = -318.0
+offset_top = -198.0
+offset_right = 2071.0
+offset_bottom = 1818.0
+texture = ExtResource("4_0glk6")
+
+[node name="DiscrudWindow2" parent="." unique_id=746734128 instance=ExtResource("5_1xp17")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 136.175
+offset_top = 90.675
+offset_right = 683.1751
+offset_bottom = 507.67487
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="DragDropWindow" parent="." unique_id=765971977 instance=ExtResource("2_0448a")]
+layout_mode = 1
+offset_left = 893.0
+offset_top = 575.00006
+offset_right = 893.0
+offset_bottom = 575.00006
+scale = Vector2(0.495, 0.495)
