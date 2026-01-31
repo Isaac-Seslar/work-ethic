@@ -60,11 +60,17 @@ scale = Vector2(2.48, 2.48)
 custom_minimum_size = Vector2(2.99, 17.5)
 layout_mode = 2
 
+[node name="RichTextLabel" type="RichTextLabel" parent="DiscrudWindow/PanelContainer/VBoxContainer" unique_id=214880159]
+layout_mode = 2
+text = "Chat history
+"
+
 [node name="MessageBox" type="RichTextLabel" parent="DiscrudWindow/PanelContainer/VBoxContainer" unique_id=731646378]
 custom_minimum_size = Vector2(0, 350.27)
 layout_mode = 2
 text = "Chat history
 "
+scroll_following = true
 
 [node name="LineEdit" type="LineEdit" parent="DiscrudWindow/PanelContainer/VBoxContainer" unique_id=94113897]
 layout_mode = 2
