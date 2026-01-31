@@ -2,3 +2,4 @@
 Our repo for GGJ26
 Working title Work Ethic
 Isaac neeeeeed milky
+Garrison is also a contributor
