@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StickerData" format=3 uid="uid://w1rfyep0oqwp"]
+
+[ext_resource type="Texture2D" uid="uid://drjda5qava4nn" path="res://assets/images/stickers/tall-pine-tree.png" id="1_i2frj"]
+[ext_resource type="Script" uid="uid://km7tcmpr50sb" path="res://scripts/stickers/sticker_data.gd" id="1_kame7"]
+
+[resource]
+script = ExtResource("1_kame7")
+name = "Pine Tree"
+price = 5
+image = ExtResource("1_i2frj")
+metadata/_custom_type_script = "uid://km7tcmpr50sb"

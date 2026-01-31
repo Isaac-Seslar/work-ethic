@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StickerData" format=3 uid="uid://5vphcgb0kyg8"]
+
+[ext_resource type="Script" uid="uid://km7tcmpr50sb" path="res://scripts/stickers/sticker_data.gd" id="1_n23ga"]
+[ext_resource type="Texture2D" uid="uid://dqvo1rw2htr7m" path="res://assets/images/stickers/sun-sticker.png" id="1_pai3q"]
+
+[resource]
+script = ExtResource("1_n23ga")
+name = "Cute Sun"
+price = 10
+image = ExtResource("1_pai3q")
+metadata/_custom_type_script = "uid://km7tcmpr50sb"
