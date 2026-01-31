@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://dkdlmo0014os1"]
+
+[ext_resource type="Texture2D" uid="uid://btetac6a8y6kx" path="res://assets/computer/desktop_background.png" id="1_ex5dl"]
+[ext_resource type="Script" uid="uid://dg5sxrkh3eg52" path="res://scripts/computer/line_edit.gd" id="2_ejw7u"]
+[ext_resource type="Script" uid="uid://bwgo5m1p1ekys" path="res://scripts/computer/timer.gd" id="3_y3ias"]
+
+[node name="Desktop" type="Control" unique_id=1141008444]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="BackgroundWallpaper" type="TextureRect" parent="." unique_id=2051308479]
+layout_mode = 1
+texture = ExtResource("1_ex5dl")
+metadata/_edit_use_anchors_ = true
+
+[node name="WindowContainer" type="ReferenceRect" parent="." unique_id=2094302562]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 94.0
+offset_right = 513.0
+offset_bottom = 504.0
+border_width = 1.4
+
+[node name="PanelContainer" type="PanelContainer" parent="WindowContainer" unique_id=482778344]
+layout_mode = 0
+offset_right = 429.0
+offset_bottom = 410.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="WindowContainer/PanelContainer" unique_id=161373108]
+layout_mode = 2
+size_flags_vertical = 0
+alignment = 1
+
+[node name="Title" type="Panel" parent="WindowContainer/PanelContainer/VBoxContainer" unique_id=811401799]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Label" type="Label" parent="WindowContainer/PanelContainer/VBoxContainer/Title" unique_id=551844415]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Discrud"
+
+[node name="Button" type="Button" parent="WindowContainer/PanelContainer/VBoxContainer/Title" unique_id=1307016809]
+layout_direction = 3
+layout_mode = 0
+offset_left = 11.51001
+offset_right = 19.51001
+offset_bottom = 8.0
+scale = Vector2(2.48, 2.48)
+
+[node name="Control" type="Control" parent="WindowContainer/PanelContainer/VBoxContainer" unique_id=2107560282]
+custom_minimum_size = Vector2(2.99, 17.5)
+layout_mode = 2
+
+[node name="MessageBox" type="RichTextLabel" parent="WindowContainer/PanelContainer/VBoxContainer" unique_id=1484387345]
+custom_minimum_size = Vector2(0, 350.27)
+layout_mode = 2
+text = "Chat history
+"
+
+[node name="LineEdit" type="LineEdit" parent="WindowContainer/PanelContainer/VBoxContainer" unique_id=1342821932]
+layout_mode = 2
+placeholder_text = "Type here ..."
+deselect_on_focus_loss_enabled = false
+script = ExtResource("2_ejw7u")
+
+[node name="Timer" type="Timer" parent="." unique_id=853901107]
+autostart = true
+script = ExtResource("3_y3ias")
