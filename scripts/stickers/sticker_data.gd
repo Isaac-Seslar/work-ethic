@@ -5,3 +5,4 @@ class_name StickerData
 @export var name : String
 @export var price : int
 @export var image : Texture2D
+@export var owned : bool = false

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d4fo3cqpt7hcr"]
+
+[ext_resource type="Script" uid="uid://dvhrmed5ps45k" path="res://scripts/tests/sticker_store_test.gd" id="1_sgscl"]
+[ext_resource type="PackedScene" uid="uid://b85864pcyl40e" path="res://scenes/computer/sticker_store/sticker_store.tscn" id="2_xeysl"]
+
+[node name="StickerStoreTest" type="Node2D" unique_id=1107810925]
+script = ExtResource("1_sgscl")
+
+[node name="StickerStore" parent="." unique_id=1916339255 instance=ExtResource("2_xeysl")]
