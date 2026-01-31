@@ -34,3 +34,15 @@ func _on_room_entered(body):
 	current_area = Constants.areas.ROOM
 	print("Room area entered")
 	print(current_area)	
+
+func _unhandled_input(event):
+	if event.is_action_pressed("interact"):
+		match current_area:
+			Constants.areas.WINDOW:
+				print("open window")
+			Constants.areas.DOOR:
+				print("open door")
+			Constants.areas.COMPUTER:
+				print("open computer")
+			Constants.areas.ROOM:
+				print("open room?")
