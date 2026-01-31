@@ -12,7 +12,6 @@ func _ready() -> void:
 
 func _on_timeout() -> void:
 	print("timeout")
-	file.spawn_file()
 	start_random_timer()
 
 func start_random_timer() -> void:
