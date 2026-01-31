@@ -1,9 +1,9 @@
 extends Timer
 
-@export var min_time: float = 3.0
-@export var max_time: float = 5.0
+@export var min_time: float = 1.0
+@export var max_time: float = 3.0
 
-@onready var line_edit: LineEdit = $"../DiscrudWindow/PanelContainer/VBoxContainer/LineEdit"
+@onready var file: DesktopFile = $"../File"
 
 func _ready() -> void:
 	timeout.connect(_on_timeout)
@@ -12,7 +12,7 @@ func _ready() -> void:
 
 func _on_timeout() -> void:
 	print("timeout")
-	line_edit.boss_messages()
+	file.spawn_file()
 	start_random_timer()
 
 func start_random_timer() -> void:

@@ -21,6 +21,10 @@ EventBus="*uid://ds0ihf07jkmng"
 StatsManager="*uid://5lhtgkl7xkjs"
 Constants="*uid://cnl8hbc86q4tm"
 
+[dotnet]
+
+project/assembly_name="WorkEthic"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
