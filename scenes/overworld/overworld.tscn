@@ -1,13 +1,10 @@
 [gd_scene format=3 uid="uid://boy2u3q80jey2"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_s2iog"]
-size = Vector2(100, 200)
+[ext_resource type="PackedScene" uid="uid://2tpura1a10ab" path="res://scenes/overworld/player.tscn" id="1_k2c4c"]
+[ext_resource type="Script" uid="uid://dlk1uy6m7yya6" path="res://scripts/overworld/player.gd" id="2_n3lcv"]
 
 [node name="Overworld" type="Node2D" unique_id=1092108105]
 
-[node name="Player" type="CharacterBody2D" parent="." unique_id=1663750962]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=859462708]
-shape = SubResource("RectangleShape2D_s2iog")
-
-[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1835473355]
+[node name="Player" parent="." unique_id=84637846 instance=ExtResource("1_k2c4c")]
+motion_mode = 1
+script = ExtResource("2_n3lcv")
