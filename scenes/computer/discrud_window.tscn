@@ -13,11 +13,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="DiscrudWindow" type="ReferenceRect" parent="." unique_id=1338162932]
-layout_mode = 0
-offset_left = 6.0
-offset_top = 4.0
-offset_right = 553.0
-offset_bottom = 421.0
+layout_mode = 1
 border_width = 1.4
 
 [node name="PanelContainer" type="PanelContainer" parent="DiscrudWindow" unique_id=715521030]
@@ -60,11 +56,17 @@ scale = Vector2(2.48, 2.48)
 custom_minimum_size = Vector2(2.99, 17.5)
 layout_mode = 2
 
+[node name="RichTextLabel" type="RichTextLabel" parent="DiscrudWindow/PanelContainer/VBoxContainer" unique_id=214880159]
+layout_mode = 2
+text = "Chat history
+"
+
 [node name="MessageBox" type="RichTextLabel" parent="DiscrudWindow/PanelContainer/VBoxContainer" unique_id=731646378]
 custom_minimum_size = Vector2(0, 350.27)
 layout_mode = 2
 text = "Chat history
 "
+scroll_following = true
 
 [node name="LineEdit" type="LineEdit" parent="DiscrudWindow/PanelContainer/VBoxContainer" unique_id=94113897]
 layout_mode = 2

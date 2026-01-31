@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://cyr7rfgkercx8"]
+
+[ext_resource type="Script" uid="uid://c3d8sk4ko5a2d" path="res://scripts/computer/money_number.gd" id="1_5mx7m"]
+
+[sub_resource type="Theme" id="Theme_wxp2v"]
+
+[node name="MoneyTracker" type="Control" unique_id=841036382]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ReferenceRect" type="ReferenceRect" parent="." unique_id=1022298389]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="ReferenceRect" unique_id=1105597942]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 3.0
+offset_right = 4.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ReferenceRect/PanelContainer" unique_id=572548475]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ReferenceRect/PanelContainer/HBoxContainer" unique_id=1983122813]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.71
+theme = SubResource("Theme_wxp2v")
+text = "Money: "
+vertical_alignment = 1
+
+[node name="MoneyNumber" type="RichTextLabel" parent="ReferenceRect/PanelContainer/HBoxContainer" unique_id=326605126]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "$0"
+vertical_alignment = 1
+script = ExtResource("1_5mx7m")
