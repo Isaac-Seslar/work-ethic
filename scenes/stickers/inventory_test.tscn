@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d3802vkara80o"]
+
+[ext_resource type="Script" uid="uid://bgyucqvnhy144" path="res://scripts/stickers/inventory_test.gd" id="1_f0pru"]
+[ext_resource type="PackedScene" uid="uid://cc536um3i7hi0" path="res://scenes/stickers/inventory.tscn" id="1_v2w1m"]
+
+[node name="InventoryTest" type="Node2D" unique_id=1731035476]
+script = ExtResource("1_f0pru")
+
+[node name="Inventory" parent="." unique_id=1284367931 instance=ExtResource("1_v2w1m")]

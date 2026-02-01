@@ -16,6 +16,7 @@ func add_sticker(sticker_data : StickerData) -> void:
 	
 	stickers[sticker_data.name].count += 1
 	EventBus.emit_signal("inventory_changed")
+	print("sticker added")
 
 func remove_sticker(sticker_data : StickerData) -> void:
 	if not stickers.has(sticker_data.name):
