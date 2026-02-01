@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StickerData" format=3 uid="uid://cqw7i4e7a54ko"]
+
+[ext_resource type="Texture2D" uid="uid://cd23dfghcj2q7" path="res://assets/images/stickers/Flamingo.png" id="1_i83pl"]
+[ext_resource type="Script" uid="uid://km7tcmpr50sb" path="res://scripts/stickers/sticker_data.gd" id="1_p4xh5"]
+
+[resource]
+script = ExtResource("1_p4xh5")
+name = "Flamingo"
+price = 16
+image = ExtResource("1_i83pl")
+metadata/_custom_type_script = "uid://km7tcmpr50sb"

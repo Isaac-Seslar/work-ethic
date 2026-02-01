@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StickerData" format=3 uid="uid://d5jj4cd5wbjw"]
+
+[ext_resource type="Script" uid="uid://km7tcmpr50sb" path="res://scripts/stickers/sticker_data.gd" id="1_gj3or"]
+[ext_resource type="Texture2D" uid="uid://4ylm8rumhhpr" path="res://assets/images/stickers/Cloud.png" id="1_tpr5e"]
+
+[resource]
+script = ExtResource("1_gj3or")
+name = "Cloud"
+price = 5
+image = ExtResource("1_tpr5e")
+metadata/_custom_type_script = "uid://km7tcmpr50sb"
