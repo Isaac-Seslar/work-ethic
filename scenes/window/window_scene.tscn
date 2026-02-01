@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://6ihuyk8aecwy"]
+
+[ext_resource type="Texture2D" uid="uid://cb2rpfvvtyxtw" path="res://assets/svgs/room.png" id="1_r8m0q"]
+[ext_resource type="Texture2D" uid="uid://dw1tvemkqd1pi" path="res://assets/svgs/window.png" id="2_ns0mo"]
+[ext_resource type="PackedScene" uid="uid://cc536um3i7hi0" path="res://scenes/stickers/inventory.tscn" id="3_ns0mo"]
+[ext_resource type="Script" uid="uid://bu5aqhjwvlwsm" path="res://scripts/window/hide_inventory_button.gd" id="4_xdb4x"]
+
+[sub_resource type="Theme" id="Theme_xdb4x"]
+
+[node name="WindowScene" type="Node2D" unique_id=852459810]
+
+[node name="Room" type="Sprite2D" parent="." unique_id=1770413828]
+position = Vector2(548.5, 316.49997)
+scale = Vector2(2.4232142, 1.9442812)
+texture = ExtResource("1_r8m0q")
+region_enabled = true
+region_rect = Rect2(300.84897, 0, 560.24866, 341.62332)
+
+[node name="Window" type="Sprite2D" parent="." unique_id=2098679868]
+position = Vector2(576, 324.99997)
+scale = Vector2(2.2, 2.2)
+texture = ExtResource("2_ns0mo")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=147550484]
+position = Vector2(576, 322)
+
+[node name="Inventory" parent="." unique_id=1284367931 instance=ExtResource("3_ns0mo")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=777676521]
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=185672486]
+offset_left = 9.0
+offset_top = 579.0
+offset_right = 147.0
+offset_bottom = 634.0
+theme = SubResource("Theme_xdb4x")
+text = "Show Inventory"
+script = ExtResource("4_xdb4x")
