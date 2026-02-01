@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StickerData" format=3 uid="uid://dp1cw84jqtrip"]
+
+[ext_resource type="Script" uid="uid://km7tcmpr50sb" path="res://scripts/stickers/sticker_data.gd" id="1_3npy0"]
+[ext_resource type="Texture2D" uid="uid://582ccu7ie08i" path="res://assets/stickers/smiley.png" id="1_37o6q"]
+
+[resource]
+script = ExtResource("1_3npy0")
+name = "Smiley"
+image = ExtResource("1_37o6q")
+owned = true
+metadata/_custom_type_script = "uid://km7tcmpr50sb"

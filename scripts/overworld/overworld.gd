@@ -40,6 +40,7 @@ func _on_room_entered(body):
 	print(current_area)	
 
 func _on_delivery_arrived(sticker_data: StickerData):
+	print("overworld on delivery arrived")
 	# Add Sticker to pile of envelopes
 	deliveries.append(sticker_data)
 	# Add an envelope sprite
