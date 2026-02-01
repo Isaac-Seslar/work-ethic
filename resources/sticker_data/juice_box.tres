@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StickerData" format=3 uid="uid://brf7i8ks0ag52"]
+
+[ext_resource type="Script" uid="uid://km7tcmpr50sb" path="res://scripts/stickers/sticker_data.gd" id="1_dvntu"]
+[ext_resource type="Texture2D" uid="uid://dgxe4sfopdupd" path="res://assets/images/stickers/juice_box.PNG" id="1_ykv6w"]
+
+[resource]
+script = ExtResource("1_dvntu")
+name = "Juice Box"
+price = 10
+image = ExtResource("1_ykv6w")
+metadata/_custom_type_script = "uid://km7tcmpr50sb"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StickerData" format=3 uid="uid://b8h05r1nsdnas"]
+
+[ext_resource type="Script" uid="uid://km7tcmpr50sb" path="res://scripts/stickers/sticker_data.gd" id="1_271w6"]
+[ext_resource type="Texture2D" uid="uid://d3ogdd2ry1jv0" path="res://assets/images/stickers/dino_teeth.PNG" id="1_kxl6p"]
+
+[resource]
+script = ExtResource("1_271w6")
+name = "Dino Teeth"
+price = 25
+image = ExtResource("1_kxl6p")
+metadata/_custom_type_script = "uid://km7tcmpr50sb"
