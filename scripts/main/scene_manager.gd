@@ -7,6 +7,7 @@ var current_scene = Constants.areas.ROOM
 func _ready() -> void:
 	register_scene(Constants.areas.COMPUTER, preload("res://scenes/computer/desk.tscn"))
 	register_scene(Constants.areas.ROOM, preload("res://scenes/overworld/overworld.tscn"))	
+	register_scene(Constants.areas.WINDOW, preload("res://scenes/window/window_scene.tscn"))
 	switch_scene(Constants.areas.ROOM)
 	EventBus.switch_scene.connect(switch_scene)
 
