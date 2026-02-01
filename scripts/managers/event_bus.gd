@@ -11,3 +11,4 @@ signal stamina_changed(current_stamina : float)
 
 #Sticker Signals
 signal sticker_purchased(sticker_data : StickerData)
+signal inventory_changed

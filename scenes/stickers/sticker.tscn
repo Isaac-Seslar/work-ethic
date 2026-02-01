@@ -8,7 +8,6 @@ radius = 65.76473
 
 [node name="Sticker" type="Area2D" unique_id=1974334144]
 script = ExtResource("1_imf23")
-sticker_texture = ExtResource("1_mpens")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1471967883]
 scale = Vector2(0.16, 0.16)
