@@ -3,7 +3,7 @@ extends Node2D
 @export var sticker_data_path : String = "res://resources/sticker_data/"
 @export var store_button_scene: PackedScene
 
-@onready var grid := $Panel/VBoxContainer/Stickers
+@onready var grid := $Panel/VBoxContainer/ScrollContainer/Stickers
 
 func _ready():
 	load_items_from_directory(sticker_data_path)

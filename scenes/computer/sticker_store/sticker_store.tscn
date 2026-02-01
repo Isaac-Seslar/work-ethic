@@ -34,6 +34,10 @@ theme_override_font_sizes/font_size = 25
 text = "www.stickerboi.com"
 horizontal_alignment = 1
 
-[node name="Stickers" type="GridContainer" parent="Panel/VBoxContainer" unique_id=1983046592]
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/VBoxContainer" unique_id=1896456973]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Stickers" type="GridContainer" parent="Panel/VBoxContainer/ScrollContainer" unique_id=1983046592]
 layout_mode = 2
 columns = 3
