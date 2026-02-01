@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bvtlw5tvd8xtd"]
 
-[ext_resource type="Texture2D" uid="uid://bxd8obsok3hjr" path="res://assets/computer/folder.png" id="2_agxvg"]
+[ext_resource type="Texture2D" uid="uid://de220tkbnbvth" path="res://assets/svgs/file-folder.png" id="1_1r7na"]
 [ext_resource type="Script" uid="uid://cm6r7y7wlqhir" path="res://scripts/computer/folder.gd" id="2_yu3dt"]
-[ext_resource type="Texture2D" uid="uid://btdu6i4pcfrdj" path="res://assets/computer/file.png" id="3_yu3dt"]
+[ext_resource type="Texture2D" uid="uid://djynceoq3q4xi" path="res://assets/svgs/file.png" id="3_1r7na"]
 [ext_resource type="Script" uid="uid://dcibkivqqkovy" path="res://scripts/computer/file.gd" id="4_yu3dt"]
 [ext_resource type="Script" uid="uid://daitoqegvpcmp" path="res://scripts/computer/file_timer.gd" id="5_1r7na"]
 
@@ -22,7 +22,8 @@ offset_top = 140.0
 offset_right = 1539.0
 offset_bottom = 1164.0
 scale = Vector2(0.345, 0.345)
-texture = ExtResource("2_agxvg")
+texture = ExtResource("1_1r7na")
+stretch_mode = 4
 script = ExtResource("2_yu3dt")
 
 [node name="File" type="TextureRect" parent="." unique_id=414856916]
@@ -32,7 +33,9 @@ offset_top = 217.00002
 offset_right = 1862.0
 offset_bottom = 1527.0
 scale = Vector2(0.17, 0.17)
-texture = ExtResource("3_yu3dt")
+texture = ExtResource("3_1r7na")
+expand_mode = 2
+stretch_mode = 4
 script = ExtResource("4_yu3dt")
 
 [node name="FileTimer" type="Timer" parent="." unique_id=967351719]
