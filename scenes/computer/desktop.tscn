@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://btetac6a8y6kx" path="res://assets/computer/desktop_background.png" id="1_ex5dl"]
 [ext_resource type="PackedScene" uid="uid://bvtlw5tvd8xtd" path="res://scenes/computer/drag_drop_window.tscn" id="2_0448a"]
 [ext_resource type="PackedScene" uid="uid://cyr7rfgkercx8" path="res://scenes/computer/money_tracker_gui.tscn" id="4_hdxfd"]
+[ext_resource type="PackedScene" uid="uid://b85864pcyl40e" path="res://scenes/computer/sticker_store/sticker_store.tscn" id="5_0glk6"]
 [ext_resource type="PackedScene" uid="uid://b561layt3px1l" path="res://scenes/computer/discrud_window.tscn" id="5_1xp17"]
 
 [node name="Desktop" type="Control" unique_id=1141008444]
@@ -49,3 +50,6 @@ offset_left = 5.0
 offset_top = 861.0
 offset_right = 205.0
 offset_bottom = 961.0
+
+[node name="StickerStore" parent="." unique_id=1916339255 instance=ExtResource("5_0glk6")]
+position = Vector2(1396, 27)
