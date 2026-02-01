@@ -4,6 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://dw1tvemkqd1pi" path="res://assets/svgs/window.png" id="2_ns0mo"]
 [ext_resource type="PackedScene" uid="uid://cc536um3i7hi0" path="res://scenes/stickers/inventory.tscn" id="3_ns0mo"]
 [ext_resource type="Script" uid="uid://bu5aqhjwvlwsm" path="res://scripts/window/hide_inventory_button.gd" id="4_xdb4x"]
+[ext_resource type="Theme" uid="uid://bi54ign8ggomc" path="res://assets/computer/Themes/Classic95/Classic95.tres" id="5_mfkli"]
+[ext_resource type="FontFile" uid="uid://cgbbpd6u1gbfg" path="res://assets/computer/fonts/w95fa/W95FA.otf" id="6_ytr4j"]
+[ext_resource type="Script" uid="uid://culobfxqyv0ix" path="res://scripts/computer/return_to_room_button.gd" id="7_lbyvs"]
 
 [sub_resource type="Theme" id="Theme_xdb4x"]
 
@@ -36,3 +39,16 @@ offset_bottom = 634.0
 theme = SubResource("Theme_xdb4x")
 text = "Show Inventory"
 script = ExtResource("4_xdb4x")
+
+[node name="ReturnToRoomButton" type="Button" parent="." unique_id=1091868974]
+offset_left = 996.0
+offset_top = 562.0
+offset_right = 1127.0
+offset_bottom = 615.0
+theme = ExtResource("5_mfkli")
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_ytr4j")
+text = "Return to room"
+script = ExtResource("7_lbyvs")
+
+[connection signal="pressed" from="ReturnToRoomButton" to="ReturnToRoomButton" method="_on_pressed"]
