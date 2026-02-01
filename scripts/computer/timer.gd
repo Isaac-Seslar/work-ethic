@@ -8,15 +8,12 @@ extends Timer
 func _ready() -> void:
 	timeout.connect(_on_timeout)
 	start_random_timer()
-	print("ready")
 
 func _on_timeout() -> void:
-	print("timeout")
 	line_edit.boss_messages()
 	start_random_timer()
 
 func start_random_timer() -> void:
-	print("start")
 	# randf_range generates a random float between two numbers
 	wait_time = randf_range(min_time, max_time)
 	start(wait_time)

@@ -45,6 +45,6 @@ func _on_pressed() -> void:
 	sticker_data.owned = true
 	StatsManager.spend_money(sticker_data.price)
 	EventBus.emit_signal("sticker_purchased", sticker_data)
-
+	
 func _process(delta: float) -> void:
 	pass
