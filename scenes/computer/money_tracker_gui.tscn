@@ -40,12 +40,14 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.71
 theme = SubResource("Theme_wxp2v")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Money: "
 vertical_alignment = 1
 
 [node name="MoneyNumber" type="RichTextLabel" parent="ReferenceRect/PanelContainer/HBoxContainer" unique_id=326605126]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "$0"
 vertical_alignment = 1
 script = ExtResource("1_5mx7m")
