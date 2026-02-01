@@ -5,6 +5,8 @@
 [ext_resource type="Script" uid="uid://dg5sxrkh3eg52" path="res://scripts/computer/line_edit.gd" id="2_6rsil"]
 [ext_resource type="Script" uid="uid://bwgo5m1p1ekys" path="res://scripts/computer/timer.gd" id="3_6rsil"]
 [ext_resource type="FontFile" uid="uid://cgbbpd6u1gbfg" path="res://assets/computer/fonts/w95fa/W95FA.otf" id="3_pv05d"]
+[ext_resource type="Script" uid="uid://b0q22cfsjmj0w" path="res://scripts/computer/keyboard_audio_player.gd" id="6_1eqbl"]
+[ext_resource type="AudioStream" uid="uid://cvgioaq43cn0d" path="res://assets/sounds/typing1.wav" id="7_7hvke"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ciow"]
 bg_color = Color(0, 0, 0.5019608, 1)
@@ -114,3 +116,7 @@ layout_mode = 2
 [node name="Timer" type="Timer" parent="." unique_id=1282773239]
 autostart = true
 script = ExtResource("3_6rsil")
+
+[node name="KeyboardAudioPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1172417455]
+stream = ExtResource("7_7hvke")
+script = ExtResource("6_1eqbl")
