@@ -13,6 +13,14 @@ border_width_top = 3
 border_width_right = 3
 border_width_bottom = 3
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pv05d"]
+bg_color = Color(0.973535, 0.9735351, 0.973535, 1)
+border_width_left = 5
+border_width_right = 5
+border_width_bottom = 5
+shadow_color = Color(0, 0, 0, 0.74509805)
+shadow_offset = Vector2(0.31, 0)
+
 [node name="DiscrudWindow" type="Control" unique_id=192346948]
 layout_mode = 3
 anchors_preset = 15
@@ -90,6 +98,7 @@ scroll_following = true
 [node name="LineEdit" type="LineEdit" parent="DiscrudWindow/PanelContainer/VBoxContainer" unique_id=94113897]
 layout_mode = 2
 theme = ExtResource("1_1ciow")
+theme_override_styles/normal = SubResource("StyleBoxFlat_pv05d")
 placeholder_text = "Type here ..."
 deselect_on_focus_loss_enabled = false
 script = ExtResource("2_6rsil")
