@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dkdlmo0014os1"]
 
-[ext_resource type="Texture2D" uid="uid://btetac6a8y6kx" path="res://assets/computer/desktop_background.png" id="1_ex5dl"]
+[ext_resource type="Texture2D" uid="uid://des0jk6glojwp" path="res://assets/svgs/desktop_background.png" id="1_0glk6"]
 [ext_resource type="PackedScene" uid="uid://bvtlw5tvd8xtd" path="res://scenes/computer/drag_drop_window.tscn" id="2_0448a"]
 [ext_resource type="PackedScene" uid="uid://cyr7rfgkercx8" path="res://scenes/computer/money_tracker_gui.tscn" id="4_hdxfd"]
 [ext_resource type="PackedScene" uid="uid://b85864pcyl40e" path="res://scenes/computer/sticker_store/sticker_store.tscn" id="5_0glk6"]
@@ -18,7 +18,7 @@ layout_mode = 1
 offset_right = 1716.0
 offset_bottom = 965.0
 theme = SubResource("Theme_0glk6")
-texture = ExtResource("1_ex5dl")
+texture = ExtResource("1_0glk6")
 
 [node name="DragDropWindow" parent="." unique_id=765971977 instance=ExtResource("2_0448a")]
 layout_mode = 1
