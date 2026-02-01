@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StickerData" format=3 uid="uid://dn8uhm3uu2uq3"]
+
+[ext_resource type="Texture2D" uid="uid://cj7bkw2t8ysep" path="res://assets/stickers/cool-sun.png" id="1_f52j3"]
+[ext_resource type="Script" uid="uid://km7tcmpr50sb" path="res://scripts/stickers/sticker_data.gd" id="1_puvxy"]
+
+[resource]
+script = ExtResource("1_puvxy")
+name = "Cool Sun"
+price = 20
+image = ExtResource("1_f52j3")
+metadata/_custom_type_script = "uid://km7tcmpr50sb"
