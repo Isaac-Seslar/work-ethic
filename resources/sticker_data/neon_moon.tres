@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StickerData" format=3 uid="uid://lr0nciakp1w4"]
+
+[ext_resource type="Texture2D" uid="uid://65mno7tdsirq" path="res://assets/images/stickers/neon_moon.PNG" id="1_cw7mp"]
+[ext_resource type="Script" uid="uid://km7tcmpr50sb" path="res://scripts/stickers/sticker_data.gd" id="1_jmi0f"]
+
+[resource]
+script = ExtResource("1_jmi0f")
+name = "Neon Moon"
+price = 25
+image = ExtResource("1_cw7mp")
+metadata/_custom_type_script = "uid://km7tcmpr50sb"
