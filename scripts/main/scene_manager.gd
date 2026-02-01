@@ -8,10 +8,7 @@ func _ready() -> void:
 	register_scene(Constants.areas.COMPUTER, preload("res://scenes/computer/desktop.tscn"))
 	register_scene(Constants.areas.ROOM, preload("res://scenes/overworld/overworld.tscn"))	
 	switch_scene(Constants.areas.ROOM)
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+	EventBus.switch_scene.connect(switch_scene)
 
 func register_scene(name: Constants.areas, packed_scene: PackedScene):
 	var scene_instance = packed_scene.instantiate()
