@@ -104,6 +104,10 @@ scroll_following = true
 [node name="LineEdit" type="LineEdit" parent="DiscrudWindow/PanelContainer/VBoxContainer" unique_id=94113897]
 layout_mode = 2
 theme = ExtResource("1_1ciow")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.17821234, 0.1782119, 0.17821199, 1)
+theme_override_fonts/font = ExtResource("3_pv05d")
 theme_override_styles/normal = SubResource("StyleBoxFlat_pv05d")
 placeholder_text = "Type here ..."
 deselect_on_focus_loss_enabled = false

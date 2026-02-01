@@ -34,7 +34,7 @@ func _message_formater(new_text, prepended_val: String ="" ):
 	clear()
 	
 func boss_messages():
-	var message_picker = randi_range(1,5)
+	var message_picker = randi_range(1,16)
 	var boss_message = null
 	
 	
@@ -42,8 +42,23 @@ func boss_messages():
 		1: boss_message = "Boss: What are you doing?"
 		2: boss_message = "Boss: Whats the status of your deliverables??"
 		3: boss_message = "Boss: Lets circle back on that..."
-		4: boss_message = "Boss: Understood. I need the ETA on the write up"
+		4: boss_message = "Boss: I need the ETA on the write up"
 		5: boss_message = "Boss: Can you hop on a meeting real quick actually."
+		6: boss_message = "Boss: ..."
+		7: boss_message = "Boss: Have you been putting in a full 40 these past weeks?"
+		8: boss_message = "Boss: HR just got back to me. We've denied your vacation"
+		9: boss_message = "Boss: Just a heads up, after recent layoffs your workload is increased"
+		10: boss_message = "Boss: We like to think of ourselves as a family FYI"
+		11: boss_message = "Boss: Haven't seen you at any weekend events recently"
+		12: boss_message = "Boss: Make sure to update your leave schedule 3 months in advance"
+		13: boss_message = "Boss: Remember to keep in mind what we spoke about last week"
+		14: boss_message = "Boss: I don't pay you to think. Please just get your work done"
+		15: boss_message = "Boss: Haven't noticed your mouse move in awhile. They keyloggers aren't getting anything"
+		16: boss_message = "Boss: Your last performance review wasn't good. What are you doing to improve"
+		
+		
+		
+		
 
 	if text.is_empty():
 		if boss_intoduction_msg == false:
