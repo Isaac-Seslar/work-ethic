@@ -23,6 +23,10 @@ Constants="*uid://cnl8hbc86q4tm"
 DeliverySystem="*uid://cvv0t3h3oboje"
 StickerManager="*uid://c5yhhm4l2b1rr"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [dotnet]
 
 project/assembly_name="WorkEthic"
