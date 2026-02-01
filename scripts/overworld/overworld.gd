@@ -42,6 +42,6 @@ func _unhandled_input(event):
 				print("open door")
 			Constants.areas.COMPUTER:
 				print("open computer")
-				SceneManager.switch_scene(Constants.areas.COMPUTER)
+				EventBus.switch_scene.emit(Constants.areas.COMPUTER)
 			Constants.areas.ROOM:
-				print("open room?")
+				print("You're already here")

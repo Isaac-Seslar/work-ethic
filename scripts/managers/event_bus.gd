@@ -15,3 +15,5 @@ signal inventory_changed
 
 #Delivery Signals
 signal delivery_arrived(sticker_date : StickerData)
+
+signal switch_scene(scene_enum : Constants.areas)
