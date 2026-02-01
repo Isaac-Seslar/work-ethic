@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dkdlmo0014os1" path="res://scenes/computer/desktop.tscn" id="1_feaiy"]
 [ext_resource type="Texture2D" uid="uid://ug1hbo21kwxf" path="res://assets/svgs/desk.png" id="2_wpchs"]
+[ext_resource type="Script" uid="uid://culobfxqyv0ix" path="res://scripts/computer/return_to_room_button.gd" id="3_iips1"]
 [ext_resource type="FontFile" uid="uid://cgbbpd6u1gbfg" path="res://assets/computer/fonts/w95fa/W95FA.otf" id="3_wpchs"]
 
 [node name="Desk" type="Control" unique_id=1697720329]
@@ -26,21 +27,14 @@ offset_right = 175.91
 offset_bottom = 40.285
 scale = Vector2(0.467, 0.467)
 
-[node name="Button" type="Button" parent="." unique_id=309134940]
+[node name="ReturnToRoomButton" type="Button" parent="." unique_id=309134940]
 layout_mode = 0
-offset_left = 1006.0
-offset_top = 584.0
-offset_right = 1137.0
-offset_bottom = 637.0
+offset_left = 996.0
+offset_top = 562.0
+offset_right = 1127.0
+offset_bottom = 615.0
+theme_override_fonts/font = ExtResource("3_wpchs")
+text = "Return to room"
+script = ExtResource("3_iips1")
 
-[node name="PanelContainer" type="PanelContainer" parent="Button" unique_id=1634687985]
-layout_mode = 0
-offset_right = 130.0
-offset_bottom = 52.0
-
-[node name="RichTextLabel" type="RichTextLabel" parent="Button/PanelContainer" unique_id=1796453651]
-layout_mode = 2
-theme_override_fonts/normal_font = ExtResource("3_wpchs")
-text = "Back to room"
-horizontal_alignment = 1
-vertical_alignment = 1
+[connection signal="pressed" from="ReturnToRoomButton" to="ReturnToRoomButton" method="_on_pressed"]
