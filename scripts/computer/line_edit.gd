@@ -1,6 +1,7 @@
 extends LineEdit
 
 @onready var history_log = $"../MessageBox"
+@onready var keyboard_audio_player: AudioStreamPlayer2D = $"../../../../KeyboardAudioPlayer"
 
 var boss_message_sent:bool = false
 var prepended_val:String=""
@@ -20,6 +21,7 @@ func _on_text_submitted(new_text):
 		prepended_val="Me: "
 		StatsManager.add_money(Constants.MESSAGE_SENT_EARN)
 		_message_formater(new_text, prepended_val)
+		keyboard_audio_player.play_for_duration()
 	
 func _message_formater(new_text, prepended_val: String ="" ):
 	if new_text.strip_edges() == "":
