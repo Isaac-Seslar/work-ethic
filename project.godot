@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="WorkEthic"
-run/main_scene="uid://dkdlmo0014os1"
+run/main_scene="uid://4rv4vyvmi3nu"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 EventBus="*uid://ds0ihf07jkmng"
 StatsManager="*uid://5lhtgkl7xkjs"
 Constants="*uid://cnl8hbc86q4tm"
+SceneManager="*uid://bx22knv2vc08v"
 
 [dotnet]
 
