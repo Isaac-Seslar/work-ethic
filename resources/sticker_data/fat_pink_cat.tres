@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StickerData" format=3 uid="uid://b7nsvaojdmep3"]
+
+[ext_resource type="Script" uid="uid://km7tcmpr50sb" path="res://scripts/stickers/sticker_data.gd" id="1_7qv1m"]
+[ext_resource type="Texture2D" uid="uid://dr1thdpb2l4xc" path="res://assets/stickers/fat-pink-cat.png" id="1_rrggo"]
+
+[resource]
+script = ExtResource("1_7qv1m")
+name = "Fat Pink Cat"
+price = 15
+image = ExtResource("1_rrggo")
+metadata/_custom_type_script = "uid://km7tcmpr50sb"
