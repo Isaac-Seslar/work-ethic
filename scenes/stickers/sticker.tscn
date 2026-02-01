@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bko3t0jhxwbgq" path="res://scripts/stickers/sticker.gd" id="1_imf23"]
 [ext_resource type="Texture2D" uid="uid://dqvo1rw2htr7m" path="res://assets/images/stickers/sun-sticker.png" id="1_mpens"]
+[ext_resource type="AudioStream" uid="uid://c8xma4k0n6olg" path="res://assets/sounds/tape_sound_1.wav" id="3_dxplx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_imf23"]
 radius = 65.76473
@@ -22,3 +23,7 @@ texture = ExtResource("1_mpens")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=560144833]
 shape = SubResource("CircleShape2D_imf23")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=927846792]
+stream = ExtResource("3_dxplx")
+attenuation = 1.0352647
