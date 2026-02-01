@@ -1,8 +1,11 @@
 extends Node2D
-@export var sticker_texture : Texture2D
+
+@export var sticker_data : StickerData
 
 @onready var sprite_2d : Sprite2D = $Sprite2D
 @onready var drop_shadow : Sprite2D = $DropShadow
+
+var sticker_texture : Texture2D
 
 var dragging : bool = false
 var drag_offset := Vector2.ZERO
@@ -10,6 +13,8 @@ var selected : bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	sticker_texture = sticker_data.image
+	
 	sprite_2d.texture = sticker_texture
 	drop_shadow.texture = sticker_texture
 
