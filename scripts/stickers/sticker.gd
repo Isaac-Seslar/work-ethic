@@ -11,7 +11,7 @@ var sticker_texture : Texture2D
 var dragging : bool = false
 var drag_offset := Vector2.ZERO
 var selected : bool = false
-@onready var audio_player : AudioStreamPlayer2D = $AudioStreamPlayer2D
+@onready var sticker_audio_player: AudioStreamPlayer2D = $StickerAudioPlayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -45,7 +45,7 @@ func do_drag(event_global_position : Vector2) -> void:
 	drop_shadow.position += Vector2(3, 3)
 	z_index = 1000
 	selected = true
-	audio_player.play()
+	sticker_audio_player.play_random_sound()
 
 func stop_drag() -> void:
 	dragging = false
