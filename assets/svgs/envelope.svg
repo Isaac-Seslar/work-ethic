@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="75mm"
+   height="25mm"
+   viewBox="0 0 75 25"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="envelope.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.8746663"
+     inkscape:cx="231.77459"
+     inkscape:cy="115.22051"
+     inkscape:window-width="1707"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g5"
+       inkscape:label="envelope"
+       transform="matrix(0.99934424,0,0,0.99487331,-296.10799,-454.03197)">
+      <path
+         style="fill:#cacaca;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-opacity:1"
+         d="m 297.79839,479.85899 49.5,-21.98399 h 21.55645 l -38.32923,22.12938 z"
+         id="path4" />
+      <path
+         style="fill:#cacaca;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-opacity:1"
+         d="m 297.79839,479.85899 49.1008,-13.60093 0.3992,-8.38306 z"
+         id="path5" />
+    </g>
+  </g>
+</svg>
