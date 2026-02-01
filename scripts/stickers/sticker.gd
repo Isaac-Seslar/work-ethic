@@ -1,4 +1,4 @@
-extends Area2D
+extends Node2D
 class_name Sticker
 
 @export var sticker_data : StickerData
@@ -54,17 +54,3 @@ func stop_drag() -> void:
 	drop_shadow.position -= Vector2(3, 3)
 	z_index = 10
 	selected = false
-	
-	check_drop_target()
-
-func check_drop_target():
-	var overlaps := get_overlapping_areas()
-
-	for area in overlaps:
-		print(area.get_groups())
-		if area.is_in_group("inventory_drop_zone"):
-			handle_inventory_drop(area)
-			return
-
-func handle_inventory_drop(drop_zone: Area2D):
-	queue_free()
