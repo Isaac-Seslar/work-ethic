@@ -6,20 +6,20 @@ class_name DesktopFile
 @export_multiline var content: String = "This is some text."
 
 func _get_drag_data(_at_position: Vector2) -> Variant:
-	# 1. Create the visual preview
 	var preview = TextureRect.new()
-	preview.texture = texture # Use the same icon as this node
-	preview.size = size
-	preview.scale.x = 0.2
-	preview.scale.y = 0.2
+	preview.texture = texture
+
+	preview.expand_mode = expand_mode 
+	preview.stretch_mode = stretch_mode
+	preview.size = size 
+	preview.scale = get_global_transform().get_scale()
 	preview.modulate.a = 0.95
 	
-	# Center the preview on the mouse
 	var c = Control.new()
 	c.add_child(preview)
-	preview.position = -0.1* size
+	preview.position = -(preview.size * preview.scale) / 2
+
 	set_drag_preview(c)
-	
 
 	return { 
 		"type": "file", 
