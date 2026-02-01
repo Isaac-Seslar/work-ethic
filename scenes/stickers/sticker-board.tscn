@@ -16,7 +16,7 @@ texture = ExtResource("1_rj24h")
 
 [node name="Sticker1" parent="." unique_id=1974334144 instance=ExtResource("2_q22hh")]
 z_index = 1
-position = Vector2(324, 236)
+position = Vector2(492, 269)
 sticker_data = ExtResource("3_wuql0")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1316809059]
