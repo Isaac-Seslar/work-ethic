@@ -26,6 +26,10 @@ DeliverySystem="*uid://cvv0t3h3oboje"
 
 project/assembly_name="WorkEthic"
 
+[gui]
+
+theme/custom="uid://bi54ign8ggomc"
+
 [input]
 
 overworld_move_right={
