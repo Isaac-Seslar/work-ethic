@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cb2rpfvvtyxtw" path="res://assets/svgs/room.png" id="1_r8m0q"]
 [ext_resource type="Texture2D" uid="uid://dw1tvemkqd1pi" path="res://assets/svgs/window.png" id="2_ns0mo"]
+[ext_resource type="Texture2D" uid="uid://dmfpgh6yrsloy" path="res://assets/svgs/outside.png" id="2_ytr4j"]
 [ext_resource type="PackedScene" uid="uid://cc536um3i7hi0" path="res://scenes/stickers/inventory.tscn" id="3_ns0mo"]
 [ext_resource type="Script" uid="uid://bu5aqhjwvlwsm" path="res://scripts/window/hide_inventory_button.gd" id="4_xdb4x"]
 [ext_resource type="Theme" uid="uid://bi54ign8ggomc" path="res://assets/computer/Themes/Classic95/Classic95.tres" id="5_mfkli"]
@@ -18,6 +19,11 @@ scale = Vector2(2.4232142, 1.9442812)
 texture = ExtResource("1_r8m0q")
 region_enabled = true
 region_rect = Rect2(300.84897, 0, 560.24866, 341.62332)
+
+[node name="Outside" type="Sprite2D" parent="." unique_id=1648190936]
+position = Vector2(576, 324.5)
+scale = Vector2(0.9652778, 0.84413576)
+texture = ExtResource("2_ytr4j")
 
 [node name="Window" type="Sprite2D" parent="." unique_id=2098679868]
 position = Vector2(576, 324.99997)
