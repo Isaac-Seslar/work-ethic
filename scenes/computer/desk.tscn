@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dkdlmo0014os1" path="res://scenes/computer/desktop.tscn" id="1_feaiy"]
 [ext_resource type="Texture2D" uid="uid://ug1hbo21kwxf" path="res://assets/svgs/desk.png" id="2_wpchs"]
+[ext_resource type="Theme" uid="uid://bi54ign8ggomc" path="res://assets/computer/Themes/Classic95/Classic95.tres" id="3_3nvtc"]
 [ext_resource type="Script" uid="uid://culobfxqyv0ix" path="res://scripts/computer/return_to_room_button.gd" id="3_iips1"]
 [ext_resource type="FontFile" uid="uid://cgbbpd6u1gbfg" path="res://assets/computer/fonts/w95fa/W95FA.otf" id="3_wpchs"]
 
@@ -33,6 +34,8 @@ offset_left = 996.0
 offset_top = 562.0
 offset_right = 1127.0
 offset_bottom = 615.0
+theme = ExtResource("3_3nvtc")
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_wpchs")
 text = "Return to room"
 script = ExtResource("3_iips1")
