@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cb2rpfvvtyxtw" path="res://assets/svgs/room.png" id="5_dhsp4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jvs31"]
-size = Vector2(493, 147)
+size = Vector2(455, 147)
 
 [node name="Overworld" type="Node2D" unique_id=1092108105]
 script = ExtResource("1_662u0")
@@ -31,23 +31,28 @@ texture = ExtResource("3_jvs31")
 position = Vector2(576, 445)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WindowDetectionArea" unique_id=1738357481]
-position = Vector2(-9.5, -27.5)
+position = Vector2(-11.5, -27.5)
 shape = SubResource("RectangleShape2D_jvs31")
 
 [node name="ComputerDetectionArea" type="Area2D" parent="." unique_id=1562123647]
 position = Vector2(992, 521)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ComputerDetectionArea" unique_id=1659133031]
-polygon = PackedVector2Array(158, 126, -41, 127, -170, -70, 153, -75)
+polygon = PackedVector2Array(158, 126, -41, 127, -194, -91, -113, -89)
 
 [node name="DoorDetectionArea" type="Area2D" parent="." unique_id=640290950]
 position = Vector2(160, 520)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="DoorDetectionArea" unique_id=106690033]
 position = Vector2(-1, 0)
-polygon = PackedVector2Array(-159, 128, 85, 128, 156, -24, 44, -24)
+polygon = PackedVector2Array(-159, 128, 85, 128, 177, -58, 79, -58)
 
 [node name="RoomSprite" type="Sprite2D" parent="." unique_id=625141759]
 z_index = -100
 texture = ExtResource("5_dhsp4")
 centered = false
+
+[node name="RoomDetectionArea" type="Area2D" parent="." unique_id=193142334]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RoomDetectionArea" unique_id=682018077]
+polygon = PackedVector2Array(343, 532, 791, 533, 854, 645, 335, 643)

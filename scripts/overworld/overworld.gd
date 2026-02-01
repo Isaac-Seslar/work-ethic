@@ -5,11 +5,9 @@ var current_area = Constants.areas.ROOM
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$WindowDetectionArea.body_entered.connect(_on_window_entered)
-	$WindowDetectionArea.body_exited.connect(_on_room_entered)
 	$ComputerDetectionArea.body_entered.connect(_on_computer_entered)
-	$ComputerDetectionArea.body_exited.connect(_on_room_entered)
 	$DoorDetectionArea.body_entered.connect(_on_door_entered)
-	$DoorDetectionArea.body_exited.connect(_on_room_entered)
+	$RoomDetectionArea.body_entered.connect(_on_room_entered)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
