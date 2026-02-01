@@ -4,6 +4,9 @@
 [ext_resource type="StyleBox" uid="uid://dmutpno5a84df" path="res://resources/inventory_style.tres" id="1_i5hsv"]
 [ext_resource type="Script" uid="uid://dkesybrj4ygeq" path="res://scripts/stickers/inventory.gd" id="1_k8qys"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i5hsv"]
+size = Vector2(304, 498)
+
 [node name="Inventory" type="Panel" unique_id=1284367931]
 custom_minimum_size = Vector2(304, 500)
 size_flags_horizontal = 3
@@ -37,3 +40,9 @@ layout_mode = 2
 size_flags_horizontal = 2
 size_flags_vertical = 2
 columns = 3
+
+[node name="DropZone" type="Area2D" parent="." unique_id=778559563 groups=["inventory_drop_zone"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DropZone" unique_id=2003396597]
+position = Vector2(152, 249)
+shape = SubResource("RectangleShape2D_i5hsv")
