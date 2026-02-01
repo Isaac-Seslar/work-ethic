@@ -2,9 +2,15 @@
 
 [ext_resource type="Script" uid="uid://br5yryuxlsvmw" path="res://scenes/main.gd" id="1_o5qli"]
 [ext_resource type="Script" uid="uid://b2310cqkmedal" path="res://scripts/main/scene_manager.gd" id="2_0wfyh"]
+[ext_resource type="AudioStream" uid="uid://dgldy8tw67rsa" path="res://assets/sounds/StickerMusic.mp3" id="3_sugp2"]
 
 [node name="Main" type="Node2D" unique_id=814661657]
 script = ExtResource("1_o5qli")
 
 [node name="SceneManager" type="Node" parent="." unique_id=1959090946]
 script = ExtResource("2_0wfyh")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=574929117]
+stream = ExtResource("3_sugp2")
+volume_db = -23.672
+autoplay = true
