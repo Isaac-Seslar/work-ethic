@@ -14,6 +14,6 @@ signal sticker_purchased(sticker_data : StickerData)
 signal inventory_changed
 
 #Delivery Signals
-signal delivery_arrived(sticker_date : StickerData)
+signal delivery_arrived(sticker_data : StickerData)
 
 signal switch_scene(scene_enum : Constants.areas)
