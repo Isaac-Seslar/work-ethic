@@ -2,7 +2,7 @@ extends Node
 
 var cooldown_timer: Timer
 var purchase_started: bool = false
-var pending_delivery_data: StickerData = null
+var pending_delivery_data: Array[StickerData] = []
 
 func _ready() -> void:
 	cooldown_timer = Timer.new()
@@ -15,22 +15,25 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if cooldown_timer.is_stopped() and purchase_started:
-		deliver_sticker(pending_delivery_data)
-		purchase_started=false
-		pending_delivery_data = null
+		deliver_sticker(pending_delivery_data.pop_front())
+		
+		if pending_delivery_data.size() == 0:
+			purchase_started=false
+		else:
+			start_cooldown(Constants.DELIVERY_WAIT_TIME)
 		
 	else:
 		pass
 
 func _on_purchase_signal_received(received_sticker_data: StickerData) -> void:
-	print(received_sticker_data)
+	print(received_sticker_data.name)
 	start_cooldown(Constants.DELIVERY_WAIT_TIME)
-	pending_delivery_data = received_sticker_data
+	pending_delivery_data.append(received_sticker_data)
 	purchase_started=true
 	
 	
 func deliver_sticker(recieved_sticker_data) -> void:
-	EventBus.delivery_arrived.emit(pending_delivery_data)
+	EventBus.delivery_arrived.emit(recieved_sticker_data)
 	
 func start_cooldown(seconds: float) -> void:
 	cooldown_timer.start(seconds)
