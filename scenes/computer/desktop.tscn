@@ -34,12 +34,11 @@ grow_vertical = 0
 scale = Vector2(0.495, 0.495)
 
 [node name="MoneyTracker" parent="." unique_id=841036382 instance=ExtResource("4_hdxfd")]
-custom_minimum_size = Vector2(200, 100)
 layout_mode = 1
-offset_left = 5.0
-offset_top = 861.0
-offset_right = 205.0
-offset_bottom = 961.0
+offset_left = 66.0
+offset_top = 675.0
+offset_right = 340.0
+offset_bottom = 775.0
 
 [node name="StickerStore" parent="." unique_id=1916339255 instance=ExtResource("5_0glk6")]
 position = Vector2(1396, 27)

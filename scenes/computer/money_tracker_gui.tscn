@@ -1,6 +1,15 @@
 [gd_scene format=3 uid="uid://cyr7rfgkercx8"]
 
 [ext_resource type="Script" uid="uid://c3d8sk4ko5a2d" path="res://scripts/computer/money_number.gd" id="1_5mx7m"]
+[ext_resource type="Theme" uid="uid://bi54ign8ggomc" path="res://assets/computer/Themes/Classic95/Classic95.tres" id="1_xihd0"]
+[ext_resource type="FontFile" uid="uid://cgbbpd6u1gbfg" path="res://assets/computer/fonts/w95fa/W95FA.otf" id="2_divxa"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xihd0"]
+bg_color = Color(0, 0, 0.5019608, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
 
 [sub_resource type="Theme" id="Theme_wxp2v"]
 
@@ -11,43 +20,56 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_xihd0")
 
 [node name="ReferenceRect" type="ReferenceRect" parent="." unique_id=1022298389]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
 
-[node name="PanelContainer" type="PanelContainer" parent="ReferenceRect" unique_id=1105597942]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 4.0
-offset_top = 3.0
-offset_right = 4.0
-offset_bottom = 3.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="PanelContainer" type="PanelContainer" parent="ReferenceRect" unique_id=1122957252]
+layout_mode = 0
+offset_right = 445.0
+offset_bottom = 224.0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="ReferenceRect/PanelContainer" unique_id=572548475]
+[node name="VBoxContainer" type="VBoxContainer" parent="ReferenceRect/PanelContainer" unique_id=738666054]
 layout_mode = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="ReferenceRect/PanelContainer/HBoxContainer" unique_id=1983122813]
+[node name="PanelContainer2" type="PanelContainer" parent="ReferenceRect/PanelContainer/VBoxContainer" unique_id=1215544001]
+custom_minimum_size = Vector2(0.52, 35.08)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xihd0")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ReferenceRect/PanelContainer/VBoxContainer/PanelContainer2" unique_id=386987664]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("2_divxa")
+theme_override_font_sizes/normal_font_size = 25
+text = "www.bigbrotherbank.com"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="ReferenceRect/PanelContainer/VBoxContainer" unique_id=1105597942]
+custom_minimum_size = Vector2(4.335, 100)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ReferenceRect/PanelContainer/VBoxContainer/PanelContainer" unique_id=572548475]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ReferenceRect/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer" unique_id=1983122813]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.71
 theme = SubResource("Theme_wxp2v")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_divxa")
+theme_override_font_sizes/normal_font_size = 25
 text = "Money: "
 vertical_alignment = 1
 
-[node name="MoneyNumber" type="RichTextLabel" parent="ReferenceRect/PanelContainer/HBoxContainer" unique_id=326605126]
+[node name="MoneyNumber" type="RichTextLabel" parent="ReferenceRect/PanelContainer/VBoxContainer/PanelContainer/HBoxContainer" unique_id=326605126]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_divxa")
+theme_override_font_sizes/normal_font_size = 25
 text = "$0"
 vertical_alignment = 1
 script = ExtResource("1_5mx7m")
