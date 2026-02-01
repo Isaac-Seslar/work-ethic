@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b85864pcyl40e"]
 
-[ext_resource type="Script" uid="uid://bud7jiy5cdyon" path="res://scenes/computer/sticker_store/sticker_store.gd" id="1_u1dyf"]
+[ext_resource type="Script" uid="uid://bud7jiy5cdyon" path="res://scripts/computer/StickerStore/sticker_store.gd" id="1_u1dyf"]
 [ext_resource type="PackedScene" uid="uid://chmjpsdljt4qq" path="res://scenes/computer/sticker_store/store_button.tscn" id="2_pr5ai"]
 
 [node name="StickerStore" type="Node2D" unique_id=1916339255]
