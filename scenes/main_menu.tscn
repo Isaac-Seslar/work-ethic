@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://ldn6134au02s"]
+
+[ext_resource type="Texture2D" uid="uid://dmfpgh6yrsloy" path="res://assets/svgs/outside.png" id="1_ekxnf"]
+[ext_resource type="FontFile" uid="uid://cgbbpd6u1gbfg" path="res://assets/computer/fonts/w95fa/W95FA.otf" id="2_bqqt6"]
+[ext_resource type="Script" uid="uid://dvmmdgaeqg6k0" path="res://scripts/main/start_game_button.gd" id="3_bqqt6"]
+
+[node name="MainMenu" type="Control" unique_id=2076551725]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1705142193]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_ekxnf")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1461399209]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_bqqt6")
+theme_override_font_sizes/normal_font_size = 200
+text = "Stick to it"
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="." unique_id=2034013735]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -62.590027
+offset_top = -124.900024
+offset_right = -18.590027
+offset_bottom = -93.900024
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(2.17, 2.17)
+text = "Start"
+script = ExtResource("3_bqqt6")
+
+[connection signal="pressed" from="StartButton" to="StartButton" method="_on_pressed"]
