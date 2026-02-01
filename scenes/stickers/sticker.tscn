@@ -7,6 +7,7 @@
 radius = 65.76473
 
 [node name="Sticker" type="Area2D" unique_id=1974334144]
+z_index = 10
 script = ExtResource("1_imf23")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1471967883]

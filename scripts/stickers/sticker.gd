@@ -50,5 +50,5 @@ func stop_drag() -> void:
 	sprite_2d.scale -= Vector2(0.01, 0.01)
 	drop_shadow.scale -= Vector2(0.02, 0.02)
 	drop_shadow.position -= Vector2(3, 3)
-	z_index = 0
+	z_index = 10
 	selected = false
