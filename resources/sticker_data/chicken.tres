@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StickerData" format=3 uid="uid://bn3i62qeb4x0m"]
+
+[ext_resource type="Script" uid="uid://km7tcmpr50sb" path="res://scripts/stickers/sticker_data.gd" id="1_2sy44"]
+[ext_resource type="Texture2D" uid="uid://bfn1lc0dmnug6" path="res://assets/stickers/chicken.png" id="1_70o75"]
+
+[resource]
+script = ExtResource("1_2sy44")
+name = "Chicken"
+price = 12
+image = ExtResource("1_70o75")
+metadata/_custom_type_script = "uid://km7tcmpr50sb"
