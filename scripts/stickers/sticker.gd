@@ -1,4 +1,5 @@
 extends Node2D
+class_name Sticker
 
 @export var sticker_data : StickerData
 
@@ -21,21 +22,33 @@ func _ready() -> void:
 func _input_event(_viewport : Node, event : InputEvent, _shape_idx : int) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		if event.is_pressed():
-			dragging = true
-			drag_offset = global_position - event.global_position
-			sprite_2d.scale += Vector2(0.01, 0.01)
-			drop_shadow.scale += Vector2(0.02, 0.02)
-			drop_shadow.position += Vector2(3, 3)
-			z_index = 1000
-			selected = true
+			do_drag(event.global_position)
 		elif selected:
-			dragging = false
-			sprite_2d.scale -= Vector2(0.01, 0.01)
-			drop_shadow.scale -= Vector2(0.02, 0.02)
-			drop_shadow.position -= Vector2(3, 3)
-			z_index = 0
-			selected = false
+			print("released")
+			stop_drag()
+
+func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		if selected:
+			stop_drag()
 
 func _process(_delta: float) -> void:
 	if dragging:
 		position = get_global_mouse_position() + drag_offset
+
+func do_drag(event_global_position : Vector2) -> void:
+	dragging = true
+	drag_offset = global_position - event_global_position
+	sprite_2d.scale += Vector2(0.01, 0.01)
+	drop_shadow.scale += Vector2(0.02, 0.02)
+	drop_shadow.position += Vector2(3, 3)
+	z_index = 1000
+	selected = true
+
+func stop_drag() -> void:
+	dragging = false
+	sprite_2d.scale -= Vector2(0.01, 0.01)
+	drop_shadow.scale -= Vector2(0.02, 0.02)
+	drop_shadow.position -= Vector2(3, 3)
+	z_index = 0
+	selected = false

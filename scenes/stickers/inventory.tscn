@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cc536um3i7hi0"]
+
+[ext_resource type="PackedScene" uid="uid://c7lngmeks0u4d" path="res://scenes/stickers/inventory_slot.tscn" id="1_gxbgt"]
+[ext_resource type="StyleBox" uid="uid://dmutpno5a84df" path="res://resources/inventory_style.tres" id="1_i5hsv"]
+[ext_resource type="Script" uid="uid://dkesybrj4ygeq" path="res://scripts/stickers/inventory.gd" id="1_k8qys"]
+
+[node name="Inventory" type="Panel" unique_id=1284367931]
+custom_minimum_size = Vector2(304, 500)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = ExtResource("1_i5hsv")
+script = ExtResource("1_k8qys")
+sticker_slot = ExtResource("1_gxbgt")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1522567282]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer" unique_id=1199912624]
+custom_minimum_size = Vector2(0, 35.03)
+layout_mode = 2
+size_flags_vertical = 2
+text = "Inventory"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer" unique_id=55481710]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 20.0
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer" unique_id=1390862102]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+columns = 3
