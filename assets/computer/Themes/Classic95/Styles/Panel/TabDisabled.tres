@@ -1,6 +1,6 @@
-[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://rv4c8lkv0hj6"]
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://rv4c8lkv0hj6"]
 
-[ext_resource type="Texture2D" uid="uid://bsynp3t8cr3nw" path="res://Themes/Classic95/Styles/Panel/TabFg.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://bsynp3t8cr3nw" path="res://assets/computer/Themes/Classic95/Styles/Panel/TabFg.png" id="1"]
 
 [resource]
 content_margin_left = 16.0
