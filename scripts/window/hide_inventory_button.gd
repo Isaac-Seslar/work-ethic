@@ -1,6 +1,6 @@
 extends Button
 
-@onready var inventory: Panel = $"../../Inventory"
+@onready var inventory: Panel = $"../Inventory"
 
 func _ready() -> void:
 	update_text()
