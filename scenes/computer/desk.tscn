@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bb7voebx2k7i1"]
+
+[ext_resource type="PackedScene" uid="uid://dkdlmo0014os1" path="res://scenes/computer/desktop.tscn" id="1_feaiy"]
+[ext_resource type="Texture2D" uid="uid://ug1hbo21kwxf" path="res://assets/svgs/desk.png" id="2_wpchs"]
+
+[node name="Desk" type="Control" unique_id=1697720329]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1866161130]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_wpchs")
+
+[node name="Desktop" parent="." unique_id=1141008444 instance=ExtResource("1_feaiy")]
+layout_mode = 0
+offset_left = 175.91
+offset_top = 40.285
+offset_right = 175.91
+offset_bottom = 40.285
+scale = Vector2(0.467, 0.467)

@@ -1,6 +1,6 @@
-[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://qnbgi86ake58"]
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://qnbgi86ake58"]
 
-[ext_resource type="Texture2D" uid="uid://jqc8vj0l7y11" path="res://Themes/Classic95/Styles/Window/ToolWindow.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://jqc8vj0l7y11" path="res://assets/computer/Themes/Classic95/Styles/Window/ToolWindow.png" id="1"]
 
 [resource]
 content_margin_left = 5.0

@@ -1,6 +1,6 @@
-[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://28updf5mmypm"]
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://28updf5mmypm"]
 
-[ext_resource type="Texture2D" uid="uid://dfpn6ley07h74" path="res://Themes/Classic95/Styles/General/BoxDisabled.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://dfpn6ley07h74" path="res://assets/computer/Themes/Classic95/Styles/General/BoxDisabled.png" id="1"]
 
 [resource]
 content_margin_left = 5.0

@@ -1,6 +1,6 @@
-[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://csda28dw67eny"]
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://csda28dw67eny"]
 
-[ext_resource type="Texture2D" uid="uid://daspeeli4af4b" path="res://Themes/Classic95/Styles/Button/DropDown.png" id="1_cmt8t"]
+[ext_resource type="Texture2D" uid="uid://daspeeli4af4b" path="res://assets/computer/Themes/Classic95/Styles/Button/DropDown.png" id="1_cmt8t"]
 
 [resource]
 content_margin_left = 5.0
