@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bbgp8vo51frd3"]
 
-[ext_resource type="Texture2D" uid="uid://btdu6i4pcfrdj" path="res://assets/computer/file.png" id="1_cmial"]
+[ext_resource type="Texture2D" uid="uid://djynceoq3q4xi" path="res://assets/svgs/file.png" id="1_cmial"]
 [ext_resource type="Script" uid="uid://dcibkivqqkovy" path="res://scripts/computer/file.gd" id="2_13w5v"]
 
 [node name="FileControl" type="Control" unique_id=323584447]
@@ -14,8 +14,8 @@ grow_vertical = 2
 [node name="File" type="TextureRect" parent="." unique_id=1238498345]
 layout_mode = 0
 offset_left = 820.0
-offset_top = 217.00002
-offset_right = 1862.0
+offset_top = 217.0
+offset_right = 2130.0
 offset_bottom = 1527.0
 scale = Vector2(0.17, 0.17)
 texture = ExtResource("1_cmial")
