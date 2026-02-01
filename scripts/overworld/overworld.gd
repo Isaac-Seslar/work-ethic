@@ -22,21 +22,25 @@ func _process(delta: float) -> void:
 func _on_window_entered(body):
 	current_area = Constants.areas.WINDOW
 	print("Window area entered")
+	$PanelContainer/StatusText.text = "Press E to look out the windowaw"
 	print(current_area)
 
 func _on_computer_entered(body):
 	current_area = Constants.areas.COMPUTER
 	print("Computer area entered")
+	$PanelContainer/StatusText.text = "Press E to sit at computer"
 	print(current_area)
 	
 func _on_door_entered(body):
 	current_area = Constants.areas.DOOR
 	print("Door area entered")
+	$PanelContainer/StatusText.text = "Press E to pick up mail"
 	print(current_area)
 
 func _on_room_entered(body):
 	current_area = Constants.areas.ROOM
 	print("Room area entered")
+	$PanelContainer/StatusText.text = ""
 	print(current_area)	
 
 func _on_delivery_arrived(sticker_data: StickerData):
