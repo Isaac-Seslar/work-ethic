@@ -5,7 +5,7 @@ var current_scene = Constants.areas.ROOM
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	register_scene(Constants.areas.COMPUTER, preload("res://scenes/computer/desktop.tscn"))
+	register_scene(Constants.areas.COMPUTER, preload("res://scenes/computer/desk.tscn"))
 	register_scene(Constants.areas.ROOM, preload("res://scenes/overworld/overworld.tscn"))	
 	switch_scene(Constants.areas.ROOM)
 	EventBus.switch_scene.connect(switch_scene)
