@@ -11,7 +11,7 @@ func _ready() -> void:
 
 	cooldown_timer.timeout.connect(_on_cooldown_timeout)
 
-	get_node("/root/EventBus").sticker_purchased.connect(_on_purchase_signal_received)
+	EventBus.sticker_purchased.connect(_on_purchase_signal_received)
 
 func _process(delta: float) -> void:
 	if cooldown_timer.is_stopped() and purchase_started:
@@ -30,7 +30,7 @@ func _on_purchase_signal_received(received_sticker_data: StickerData) -> void:
 	
 	
 func deliver_sticker(recieved_sticker_data) -> void:
-	EventBus.emit_signal("delivery_arrived")
+	EventBus.delivery_arrived.emit(pending_delivery_data)
 	
 func start_cooldown(seconds: float) -> void:
 	cooldown_timer.start(seconds)
