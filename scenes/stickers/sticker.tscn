@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bko3t0jhxwbgq" path="res://scripts/stickers/sticker.gd" id="1_imf23"]
 [ext_resource type="Texture2D" uid="uid://dqvo1rw2htr7m" path="res://assets/images/stickers/sun-sticker.png" id="1_mpens"]
 [ext_resource type="AudioStream" uid="uid://c8xma4k0n6olg" path="res://assets/sounds/tape_sound_1.wav" id="3_dxplx"]
-[ext_resource type="Script" uid="uid://y4ss4grf8y5a" path="res://scripts/computer/StickerStore/sticker_audio_player.gd" id="4_b1esf"]
+[ext_resource type="Script" path="res://scripts/computer/StickerStore/sticker_audio_player.gd" id="4_b1esf"]
 [ext_resource type="AudioStream" uid="uid://be5nhq0lnu6wu" path="res://assets/sounds/sticker1.wav" id="5_6lrj1"]
 [ext_resource type="AudioStream" uid="uid://dqxvghlo71sbe" path="res://assets/sounds/sticker2.wav" id="6_ara2c"]
 [ext_resource type="AudioStream" uid="uid://171q1stvj7w6" path="res://assets/sounds/sticker3.wav" id="7_u8b4i"]
