@@ -22,7 +22,7 @@ func _process(delta: float) -> void:
 func _on_window_entered(body):
 	current_area = Constants.areas.WINDOW
 	print("Window area entered")
-	$PanelContainer/StatusText.text = "Press E to look out the windowaw"
+	$PanelContainer/StatusText.text = "Press E to look out the window"
 	print(current_area)
 
 func _on_computer_entered(body):
