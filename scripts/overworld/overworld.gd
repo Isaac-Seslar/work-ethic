@@ -72,6 +72,7 @@ func _unhandled_input(event):
 	if event.is_action_pressed("interact"):
 		match current_area:
 			Constants.areas.WINDOW:
+				EventBus.switch_scene.emit(Constants.areas.WINDOW)
 				print("open window")
 			Constants.areas.DOOR:
 				collect_deliveries()
