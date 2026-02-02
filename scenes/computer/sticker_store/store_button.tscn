@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://chmjpsdljt4qq"]
 
-[ext_resource type="Texture2D" uid="uid://dqvo1rw2htr7m" path="res://assets/images/stickers/sun-sticker.png" id="1_004rk"]
 [ext_resource type="Script" uid="uid://baehag4hv7mca" path="res://scripts/computer/StickerStore/store_button.gd" id="1_truv6"]
+[ext_resource type="Texture2D" uid="uid://582ccu7ie08i" path="res://assets/stickers/smiley.png" id="2_tctol"]
 [ext_resource type="FontFile" uid="uid://cgbbpd6u1gbfg" path="res://assets/computer/fonts/w95fa/W95FA.otf" id="3_tctol"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_truv6"]
@@ -36,7 +36,7 @@ custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource("1_004rk")
+texture = ExtResource("2_tctol")
 expand_mode = 1
 stretch_mode = 5
 
