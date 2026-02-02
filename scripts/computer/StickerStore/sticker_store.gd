@@ -3,10 +3,14 @@ extends Node2D
 @export var sticker_data_path : String = "res://resources/sticker_data/"
 @export var store_button_scene: PackedScene
 
+@export var stickers : Array[StickerData] 
+
 @onready var grid := $Panel/VBoxContainer/ScrollContainer/Stickers
 
 func _ready():
-	load_items_from_directory(sticker_data_path)
+	for item in stickers:
+		add_store_item(item)
+	#load_items_from_directory(sticker_data_path)
 
 func load_items_from_directory(path : String):
 	var dir : DirAccess = DirAccess.open(path)

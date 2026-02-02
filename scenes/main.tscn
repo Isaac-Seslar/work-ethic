@@ -67,4 +67,18 @@ scale = Vector2(2.17, 2.17)
 text = "Start"
 script = ExtResource("6_tipki")
 
+[node name="RichTextLabel2" type="RichTextLabel" parent="MainMenu" unique_id=1291184413]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 453.0
+offset_right = 358.0
+offset_bottom = 606.0
+theme_override_fonts/normal_font = ExtResource("5_o6xl0")
+text = "Created by:
+Garrison Osteen
+Alexander Anastassatos
+Isaac Seslar
+
+Music by: Greg Klein"
+
 [connection signal="pressed" from="MainMenu/StartButton" to="MainMenu/StartButton" method="_on_pressed"]

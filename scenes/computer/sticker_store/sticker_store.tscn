@@ -3,7 +3,20 @@
 [ext_resource type="Script" uid="uid://bud7jiy5cdyon" path="res://scripts/computer/StickerStore/sticker_store.gd" id="1_u1dyf"]
 [ext_resource type="PackedScene" uid="uid://chmjpsdljt4qq" path="res://scenes/computer/sticker_store/store_button.tscn" id="2_pr5ai"]
 [ext_resource type="Theme" uid="uid://bi54ign8ggomc" path="res://assets/computer/Themes/Classic95/Classic95.tres" id="3_0p670"]
+[ext_resource type="Script" uid="uid://km7tcmpr50sb" path="res://scripts/stickers/sticker_data.gd" id="3_tqq7q"]
 [ext_resource type="FontFile" uid="uid://cgbbpd6u1gbfg" path="res://assets/computer/fonts/w95fa/W95FA.otf" id="4_0ryqr"]
+[ext_resource type="Resource" uid="uid://bn3i62qeb4x0m" path="res://resources/sticker_data/chicken.tres" id="4_703yf"]
+[ext_resource type="Resource" uid="uid://d5jj4cd5wbjw" path="res://resources/sticker_data/cloud.tres" id="5_ljuwl"]
+[ext_resource type="Resource" uid="uid://dn8uhm3uu2uq3" path="res://resources/sticker_data/cool-sun.tres" id="6_74bie"]
+[ext_resource type="Resource" uid="uid://b8h05r1nsdnas" path="res://resources/sticker_data/dino_teeth.tres" id="7_3q37m"]
+[ext_resource type="Resource" uid="uid://b7nsvaojdmep3" path="res://resources/sticker_data/fat_pink_cat.tres" id="8_6fw15"]
+[ext_resource type="Resource" uid="uid://cqw7i4e7a54ko" path="res://resources/sticker_data/flamingo.tres" id="9_oxo54"]
+[ext_resource type="Resource" uid="uid://brf7i8ks0ag52" path="res://resources/sticker_data/juice_box.tres" id="10_rurco"]
+[ext_resource type="Resource" uid="uid://lr0nciakp1w4" path="res://resources/sticker_data/neon_moon.tres" id="11_4mrvm"]
+[ext_resource type="Resource" uid="uid://dp1cw84jqtrip" path="res://resources/sticker_data/smiley.tres" id="12_h6vfv"]
+[ext_resource type="Resource" uid="uid://c6goks1b8ir0m" path="res://resources/sticker_data/pine-tree.tres" id="13_74bie"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0p670"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xtox8"]
 bg_color = Color(0, 0, 0.5019608, 1)
@@ -11,12 +24,14 @@ bg_color = Color(0, 0, 0.5019608, 1)
 [node name="StickerStore" type="Node2D" unique_id=1916339255]
 script = ExtResource("1_u1dyf")
 store_button_scene = ExtResource("2_pr5ai")
+stickers = Array[ExtResource("3_tqq7q")]([ExtResource("4_703yf"), ExtResource("5_ljuwl"), ExtResource("6_74bie"), ExtResource("7_3q37m"), ExtResource("8_6fw15"), ExtResource("9_oxo54"), ExtResource("10_rurco"), ExtResource("11_4mrvm"), ExtResource("12_h6vfv"), ExtResource("13_74bie")])
 
 [node name="Panel" type="PanelContainer" parent="." unique_id=1614305191]
 offset_right = 308.0
 offset_bottom = 291.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_0p670")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1260242967]
 layout_mode = 2
